@@ -1,3 +1,3 @@
 all:
-	ctangle uniweb
+	ct uniweb
 	gcc -c uniweb.c
