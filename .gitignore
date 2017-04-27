@@ -4,3 +4,10 @@ uniweb.c
 uniweb.h
 uniweb.o
 utf-to-uni-test.c
+uniweb.dvi
+uniweb.idx
+uniweb.log
+uniweb.ps
+uniweb.scn
+uniweb.tex
+uniweb.toc
