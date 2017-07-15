@@ -1,9 +1,9 @@
-uniweb: uniweb.c
-	@gcc -g -c uniweb.c
-	@gcc -g uniweb.o uni-to-utf-test.c -o uniweb
+uni: uni.c
+	@gcc -g -c uni.c
+	@gcc -g uni.o uni-to-utf-test.c -o uni
 	@echo Test UNICODE to UTF-8 conversion:
-	@./uniweb
+	@./uni
 	@echo ---------------------------------
-	@gcc -g uniweb.o utf-to-uni-test.c -o uniweb
+	@gcc -g uni.o utf-to-uni-test.c -o uni
 	@echo Test UTF-8 to UNICODE conversion:
-	@./uniweb
+	@./uni
