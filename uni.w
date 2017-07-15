@@ -163,12 +163,12 @@ size_t mostowcs(char *mbs, wchar_t *s)
 @*1 Generate library files.
 Last of all, generate header and module files.
 
-@ @(uniweb.h@>=
+@ @(uni.h@>=
 @<Predeclarations of procedures@>@;
 
 @ @c
 #include <wchar.h>
-#include "uniweb.h"
+#include "uni.h"
 @<Declarations of procedures@>@;
 
 @* Test UNICODE to UTF-8 conversion.
@@ -178,7 +178,7 @@ Last of all, generate header and module files.
 #include <stdlib.h>
 #include <locale.h>
 #include <wchar.h>
-#include "uniweb.h"
+#include "uni.h"
 
 #define LCHR L'№'
 #define LSTR L"привет мир"
@@ -210,7 +210,7 @@ int main(void)
 #include <stdlib.h>
 #include <locale.h>
 #include <wchar.h>
-#include "uniweb.h"
+#include "uni.h"
 
 #define CHR "№"
 #define STR "привет мир"
