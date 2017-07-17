@@ -1,9 +1,9 @@
-uni-to-utf-test.c
+unicode-to-utf8-test.c
 uni
 uni.c
 uni.h
 uni.o
-utf-to-uni-test.c
+utf8-to-unicode-test.c
 uni.dvi
 uni.idx
 uni.log

@@ -173,7 +173,7 @@ Last of all, generate header and module files.
 
 @* Test UNICODE to UTF-8 conversion.
 
-@(uni-to-utf-test.c@>=
+@(unicode-to-utf8-test.c@>=
 #include <assert.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -205,7 +205,7 @@ int main(void)
 
 @* Test UTF-8 to UNICODE conversion.
 
-@(utf-to-uni-test.c@>=
+@(utf8-to-unicode-test.c@>=
 #include <assert.h>
 #include <stdlib.h>
 #include <locale.h>
