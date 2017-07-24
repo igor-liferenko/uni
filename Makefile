@@ -1,3 +1,6 @@
+all:
+	@echo NoOp
+
 uni: uni.c
 	@gcc -g -c uni.c
 	@gcc -g uni.o unicode-to-utf8-test.c -o uni
