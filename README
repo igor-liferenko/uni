@@ -1,2 +1,4 @@
+Compare date on these bugreports with date when this git repo was created:
 https://sourceware.org/bugzilla/show_bug.cgi?id=21092
 https://sourceware.org/bugzilla/show_bug.cgi?id=21093
+and maybe add this as an example to Intro in uni.w
