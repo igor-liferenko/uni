@@ -180,8 +180,8 @@ Last of all, generate header and module files.
 #include <wchar.h>
 #include "uni.h"
 
-#define LCHR L'#'
-#define LSTR L"hello world"
+#define LCHR L'\u2116'
+#define LSTR L"\u043f\u0440\u0438\u0432\u0435\u0442 \u043c\u0438\u0440"
 
 int main(void)
 {
@@ -212,8 +212,8 @@ int main(void)
 #include <wchar.h>
 #include "uni.h"
 
-#define CHR "#"
-#define STR "hello world"
+#define CHR "\xE2\x84\x96"
+#define STR "\xD0\xBF\xD1\x80\xD0\xB8\xD0\xB2\xD0\xB5\xD1\x82 \xD0\xBC\xD0\xB8\xD1\x80"
 
 int main(void)
 {
