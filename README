@@ -2,3 +2,4 @@ Compare date on these bugreports with date of commit 94ee6bc838301aca6dd1673b815
 https://sourceware.org/bugzilla/show_bug.cgi?id=21092
 https://sourceware.org/bugzilla/show_bug.cgi?id=21093
 and maybe add this as an example to Intro in uni.w
+see also "use mbsntowcs() to avoid buffer overwrites" commit in cweb-nls
