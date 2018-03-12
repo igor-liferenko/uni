@@ -181,7 +181,7 @@ Last of all, generate header and module files.
 #include "uni.h"
 
 #define LCHR L'\u2116'
-#define LSTR L"\u043f\u0440\u0438\u0432\u0435\u0442 \u043c\u0438\u0440"
+#define LSTR L"\u043F\u0440\u0438\u0432\u0435\u0442 \u043C\u0438\u0440"
 
 int main(void)
 {
