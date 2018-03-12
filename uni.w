@@ -173,6 +173,9 @@ Last of all, generate header and module files.
 
 @* Test UNICODE to UTF-8 conversion.
 
+NOTE: you cannot use non-english letters in english document in CWEB, so use
+escape-notation to use non-english letters.
+
 @(unicode-to-utf8-test.c@>=
 #include <assert.h>
 #include <stdlib.h>
@@ -204,6 +207,9 @@ int main(void)
 }
 
 @* Test UTF-8 to UNICODE conversion.
+
+NOTE: you cannot use non-english letters in english document in CWEB, so use
+escape-notation to use non-english letters.
 
 @(utf8-to-unicode-test.c@>=
 #include <assert.h>
