@@ -1,3 +1,11 @@
+Note about using mbsnrtowcs() library function*:
+If return value is not -1, the input string may end with complete or incomplete sequence,
+and it is impossible to determine this.
+If return value is -1, *src will point to the beginning of the failed sequence
+(but only if dest is not NULL).
+
+* - In glibc; TODO - check in musl.
+
 Compare date on these bugreports with date of commit 94ee6bc838301aca6dd1673b815b333d28c6dd84 (with this commit everything started):
 https://sourceware.org/bugzilla/show_bug.cgi?id=21092
 https://sourceware.org/bugzilla/show_bug.cgi?id=21093
