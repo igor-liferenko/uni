@@ -7,29 +7,6 @@ it is assumed here that UTF-8 data is valid. Although care is taken
 to ensure that algorithms below will not fail even if the data is
 invalid.
 
-We do not use C library character conversion functions, because they are
-overcomplicated. It is easier to write our own functions.
-
-Note about using |mbsnrtowcs| library function\footnote*{in glibc, todo - check in musl}:
-
-If return value is not -1, the input buffer (end of buffer is
-determined by \\{nms} argument) may end with complete or incomplete sequence,
-and it is impossible to determine this---*src will point past the end of the buffer
-in both cases (but only if dest is not NULL).
-If return value is -1, |*src| will point to the beginning of the failed sequence
-(but only if dest is not NULL).
-
-See the following links where this is confirmed:
-
-{\tt\catcode`_11 https://sourceware.org/bugzilla/show_bug.cgi?id=21092}\hfil\break
-{\tt\catcode`_11 https://sourceware.org/bugzilla/show_bug.cgi?id=21093}
-
-Here is rationale for such behavior, as I understand it:
-If conversion is stopped because end of buffer is reached, \\{mbsnrtowcs} does not know if there
-is continuation or not - it cannot know (without reading further bytes) if it is incorrect sequence or it is incomplete sequence (which may be correct, and also may be incorrect).
-
-Instead of |mbsnrtowcs| use |wcsntomos|---see \.{cweb-git/utf8/}.
-
 @*1 Procedures for conversion of UNICODE to UTF-8.
 
 @ The name `|wctomo|' is used
