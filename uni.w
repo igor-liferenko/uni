@@ -8,7 +8,21 @@ to ensure that algorithms below will not fail even if the data is
 invalid.
 
 We do not use C library character conversion functions, because they are
-hard to use. It is easier to write our own functions.
+overcomplicated. It is easier to write our own functions.
+
+Note about using |mbsnrtowcs| library function\footnote*{in glibc, todo - check in musl}:
+
+If return value is not -1, the input string may end with complete or incomplete sequence,
+and it is impossible to determine this.
+If return value is -1, |*src| will point to the beginning of the failed sequence
+(but only if dest is not NULL).
+
+See the following links where this is confirmed:
+
+{\tt\catcode`_11 https://sourceware.org/bugzilla/show_bug.cgi?id=21092}\hfil\break
+{\tt\catcode`_11 https://sourceware.org/bugzilla/show_bug.cgi?id=21093}
+
+Instead of |mbsnrtowcs| use |wcsntomos|---see \.{cweb-git/utf8/}.
 
 @*1 Procedures for conversion of UNICODE to UTF-8.
 
