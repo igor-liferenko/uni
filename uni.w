@@ -180,8 +180,8 @@ escape-notation to use non-english letters.
 #include <wchar.h>
 #include "uni.h"
 
-#define LCHR L'\u2116'
-#define LSTR L"\u043F\u0440\u0438\u0432\u0435\u0442 \u043C\u0438\u0440"
+#define LCHR L'№'
+#define LSTR L"привет мир"
 
 int main(void)
 {
@@ -215,8 +215,8 @@ escape-notation to use non-english letters.
 #include <wchar.h>
 #include "uni.h"
 
-#define CHR "\xE2\x84\x96"
-#define STR "\xD0\xBF\xD1\x80\xD0\xB8\xD0\xB2\xD0\xB5\xD1\x82 \xD0\xBC\xD0\xB8\xD1\x80"
+#define CHR "№"
+#define STR "привет мир"
 
 int main(void)
 {
