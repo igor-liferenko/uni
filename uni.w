@@ -1,3 +1,11 @@
+\language0
+\font\ninerm=lhr9
+\font\eightrm=lhr8
+%\font\tenss=lhss10 \let\cmntfont\tenss % alternative comment font
+\font\titlefont=lhr7 scaled\magstep4 % title on the contents page
+\font\ttitlefont=lhtt10 scaled\magstep2 % typewriter type in title
+\font\tentex=lhtex10 % TeX extended character set (used in strings)
+
 \let\lheader\rheader
 \secpagedepth=2
 @* Library for conversion between UNICODE and UTF-8.
